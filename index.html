@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onepage Website</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 20px; position: fixed; top: 0; width: 100%; z-index: 1000; }
+        header nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
+        section { padding: 80px 20px; text-align: center; }
+        .hero { background: url('https://via.placeholder.com/1200x400') center/cover no-repeat; color: #fff; }
+        .testimonios, .radio { background: #f4f4f4; }
+        footer { background: #222; color: #fff; text-align: center; padding: 40px 20px; }
+        footer a { color: #fff; text-decoration: none; margin: 0 10px; }
+        .social-icons img { width: 30px; margin: 0 5px; }
+        @media(max-width: 768px) {
+            header nav a { display: inline-block; margin: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#inicio">Inicio</a>
+            <a href="#servicios">Servicios</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <section id="inicio" class="hero">
+        <h1>Título Principal de la Página</h1>
+        <p>Descripción corta sobre el propósito del sitio web.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <p>Descripción breve de los servicios ofrecidos.</p>
+    </section>
+
+    <section class="testimonios">
+        <h2>Testimonios</h2>
+        <p>"Excelente servicio, muy recomendado" - Cliente 1</p>
+        <p>"La mejor experiencia, volveré!" - Cliente 2</p>
+        <p>"Profesionales y dedicados" - Cliente 3</p>
+    </section>
+
+    <section class="radio">
+        <h2>Programa de Radio Semanal</h2>
+        <p>Accede a nuestro contenido semanal</p>
+        <ul>
+            <li><a href="#">Episodio 1</a></li>
+            <li><a href="#">Episodio 2</a></li>
+            <li><a href="#">Episodio 3</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <div class="social-icons">
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="YouTube"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
+            <a href="#"><img src="https://via.placeholder.com/30" alt="Quora"></a>
+        </div>
+        <nav>
+            <a href="#inicio">Inicio</a> |
+            <a href="#servicios">Servicios</a> |
+            <a href="#blog">Blog</a> |
+            <a href="#contacto">Contacto</a>
+        </nav>
+        <p>Desarrollado por [Nombre del desarrollador] &copy; 2024</p>
+    </footer>
+</body>
+</html>
