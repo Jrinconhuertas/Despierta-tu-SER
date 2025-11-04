@@ -8,31 +8,31 @@
 <body>
 
 <header>
-    <div class="menu-toggle" id="menu-toggle">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <nav>
-        <a href="index.html">Inicio</a>
-        <a href="servicios.html">Servicios</a>
-        <a href="blog.html">Blog</a>
-        <a href="contacto.html">Contacto</a>
-    </nav>
+    <!-- Botón menú hamburguesa -->
     <div class="menu-burger" id="burgerBtn">
         <span></span>
         <span></span>
         <span></span>
     </div>
 
-<div class="menu-fullscreen" id="menuFull">
-    <button class="close-menu" id="closeMenu">×</button>
-    <a href="index.html">Inicio</a>
-    <a href="servicios.html">Servicios</a>
-    <a href="blog.html">Blog</a>
-    <a href="contacto.html">Contacto</a>
-</div>
+    <!-- Navegación Desktop -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Menú Móvil en pantalla completa -->
+    <div class="menu-fullscreen" id="menuFull">
+        <button class="close-menu" id="closeMenu">×</button>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </div>
 </header>
+
 
 <section class="hero">
     <h1>Despierta tu SER</h1>
@@ -91,18 +91,23 @@
     const menuFull = document.getElementById("menuFull");
     const closeBtn = document.getElementById("closeMenu");
 
+    // Abrir menú
     burgerBtn.addEventListener("click", () => {
         menuFull.classList.add("active");
+        burgerBtn.classList.add("open");
     });
 
+    // Cerrar menú con botón X
     closeBtn.addEventListener("click", () => {
         menuFull.classList.remove("active");
+        burgerBtn.classList.remove("open");
     });
 
-    // Cerrar menú al hacer clic en cualquier enlace
+    // Cerrar menú al hacer clic en un enlace
     document.querySelectorAll(".menu-fullscreen a")
         .forEach(link => link.addEventListener("click", () => {
             menuFull.classList.remove("active");
+            burgerBtn.classList.remove("open");
         }));
 </script>
 

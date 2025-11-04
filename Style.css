@@ -503,6 +503,18 @@ bottom: 90px; /* Se desplaza para no estorbar */
     transform: translateY(0);
 }
 
+/* ===== Animación de transformación a X ===== */
+.menu-burger.open span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.menu-burger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-burger.open span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
