@@ -5,24 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracias - Despierta tu SER</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/x-icon" href="./images/Mandala.ico">
 </head>
 <body>
+
     <!-- ✅ MENSAJE DE GRACIAS -->
     <section class="hero" style="text-align:center; padding:150px 20px;">
         <h1>¡Gracias por tu mensaje! 🩵</h1>
         <p>Muy pronto me pondré en contacto contigo.</p>
         <a href="index.html" class="btn-volver">Volver al Inicio</a>
     </section>
-    
+
     <!-- ✅ FOOTER -->
-<footer>
+    <footer>
+    <div class="social-icons">
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="quora.png" alt="Quora"></a>
+    </div>
+
     <nav>
         <a href="index.html">Inicio</a>
         <a href="servicios.html">Servicios</a>
         <a href="blog.html">Blog</a>
         <a href="contacto.html">Contacto</a>
     </nav>
+
     <p>Despierta tu SER — Desarrollado por Informática JRM © 2025</p>
 </footer>
 </body>

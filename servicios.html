@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Despierta tu SER — Servicios</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./images/Mandala.ico">
 </head>
 <body>
-
 <header>
     <!-- Botón menú hamburguesa -->
     <div class="menu-burger" id="burgerBtn">
@@ -38,18 +38,86 @@
     <p>Sesiones para sanar, crecer y expandir tu consciencia.</p>
 </section>
 
-<section class="servicios-container">
-    <div class="servicio-card">
-        <h3>Coaching Personal</h3>
-        <p>Transforma tus creencias y despierta tu poder interior.</p>
+<section class="servicios">
+    <h2>Servicios</h2>
+    <div class="servicios-container">
+
+        <!-- Servicio 1 -->
+        <div class="servicio-card" onclick="toggleDetails(this)">
+            <h3>Coaching personal</h3>
+            <div class="servicio-detalle">
+                <img src="https://via.placeholder.com/300" alt="Servicio Holístico">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Transformamos tu bienestar integral.</p>
+                <ul>
+                    <li>Sesiones de meditación</li>
+                    <li>Coaching personalizado</li>
+                    <li>Plan de desarrollo personal</li>
+                </ul>
+                <a href="#" target="_blank" class="btn-servicio">Comprar en Hotmart</a>
+            </div>
+        </div>
+
+        <!-- Servicio 2 -->
+        <div class="servicio-card" onclick="toggleDetails(this)">
+            <h3>Meditaciones guiadas</h3>
+            <div class="servicio-detalle">
+                <img src="https://via.placeholder.com/300" alt="Coaching de Vida">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Encuentra claridad y propósito.</p>
+                <ul>
+                    <li>Sesiones online 1 a 1</li>
+                    <li>Plan de objetivos personales</li>
+                    <li>Ejercicios prácticos</li>
+                </ul>
+                <a href="#" target="_blank" class="btn-servicio">Comprar en Hotmart</a>
+            </div>
+        </div>
+
+          <!-- Servicio 3 -->
+        <div class="servicio-card" onclick="toggleDetails(this)">
+            <h3>Sanacion energetica</h3>
+            <div class="servicio-detalle">
+                <img src="https://via.placeholder.com/300" alt="Coaching de Vida">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Encuentra claridad y propósito.</p>
+                <ul>
+                    <li>Sesiones online 1 a 1</li>
+                    <li>Plan de objetivos personales</li>
+                    <li>Ejercicios prácticos</li>
+                </ul>
+                <a href="#" target="_blank" class="btn-servicio">Comprar en Hotmart</a>
+            </div>
+        </div>
+
+        <!-- Puedes duplicar más servicios -->
     </div>
-    <div class="servicio-card">
-        <h3>Meditaciones Guiadas</h3>
-        <p>Encuentra paz y claridad con prácticas personalizadas.</p>
-    </div>
-    <div class="servicio-card">
-        <h3>Sanación Energética</h3>
-        <p>Armoniza cuerpo, mente y espíritu desde la energía.</p>
+</section>
+
+<section class="medios-pago">
+    <h2>Medios de Pago</h2>
+    <div class="medios-container">
+
+        <!-- PayPal -->
+        <div class="pago-card">
+            <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+            <h3>PayPal</h3>
+            <p>Pagos internacionales seguros con tu cuenta PayPal o tarjeta de crédito.</p>
+            <a href="#" target="_blank" class="btn-pago">Pagar con PayPal</a>
+        </div>
+
+        <!-- Transferencia Bancaria -->
+        <div class="pago-card">
+            <img src="https://www.bancopichincha.com.co/o/pichincha-theme/images/logo.png" alt="Transferencia">
+            <h3>Transferencia Bancaria</h3>
+            <p>Realiza tu pago directamente a nuestra cuenta bancaria local.</p>
+            <a href="#" target="_blank" class="btn-pago">Ver datos bancarios</a>
+        </div>
+
+        <!-- Mercado Pago (Ecuador) -->
+        <div class="pago-card">
+            <img src="./images/MP_RGB_HANDSHAKE_color_vertical.png" alt="Mercado Pago">
+            <h3>Mercado Pago</h3>
+            <p>Pagos rápidos y seguros dentro de Ecuador con Mercado Pago.</p>
+            <a href="#" target="_blank" class="btn-pago">Pagar con Mercado Pago</a>
+        </div>
     </div>
 </section>
 
@@ -63,8 +131,7 @@
     <p>Despierta tu SER — Desarrollado por Informática JRM © 2025</p>
 </footer>
 
-</footer>
-<a href="https://wa.me/573000000000?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20contigo" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+<a href="https://wa.me/593999249176?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20contigo" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
 <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
 </a>
 
@@ -91,7 +158,27 @@
             menuFull.classList.remove("active");
             burgerBtn.classList.remove("open");
         }));
-</script>
+        
+    function toggleDetails(card) {
+    const detalle = card.querySelector('.servicio-detalle');
 
+    // Cierra todos los demás detalles
+    document.querySelectorAll('.servicio-detalle').forEach(d => {
+        if(d !== detalle) {
+            d.style.maxHeight = null;
+            d.style.opacity = 0;
+        }
+    });
+
+    // Alterna el detalle del card actual
+    if(detalle.style.maxHeight){
+        detalle.style.maxHeight = null;
+        detalle.style.opacity = 0;
+    } else {
+        detalle.style.maxHeight = detalle.scrollHeight + "px";
+        detalle.style.opacity = 1;
+    }
+}
+</script>
 </body>
 </html>
