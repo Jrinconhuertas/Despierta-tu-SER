@@ -52,7 +52,7 @@ header nav a:hover {
 /* ===== HERO ===== */
 .hero {
     background: linear-gradient(rgba(13,17,23,0.55), rgba(13,17,23,0.55)),
-    url('https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1200&q=60') center/cover no-repeat;
+    url('./images/logo_blanco.png') center/cover no-repeat;
     color: #fff;
     padding: 160px 20px;
     text-shadow: 0 2px 10px rgba(0,0,0,0.45);
@@ -465,17 +465,42 @@ footer nav a:hover {
     color: var(--color-primario);
 }
 
-.footer-redes a img {
-    width: 32px;
-    height: 32px;
-    filter: brightness(0) invert(1);
+/* Estilos básicos para el Footer */
+footer {
+    background-color: #333; /* Color de fondo oscuro */
+    color: white; /* Color de texto claro */
+    padding: 20px 0;
+    text-align: center; /* Centra el texto de copyright */
 }
 
-.footer-redes a:hover img {
-    transform: scale(1.2);
-    filter: brightness(1) invert(0.2);
+.social-icons {
+    display: flex;         /* Habilita Flexbox */
+    justify-content: center; /* Centra los elementos hijos (los íconos) horizontalmente */
+    align-items: center; 
+    margin-bottom: 15px;
 }
 
+/* Estilos para las Imágenes de los Íconos */
+.social-icons img {
+    /* Define el tamaño de tus íconos */
+    width: 30px; 
+    height: 30px; 
+    
+    /* Asegura que la imagen se vea bien (útil si las imágenes son de alta resolución) */
+    object-fit: contain; 
+    
+    /* Espacio horizontal entre los íconos */
+    margin: 0 10px; 
+    
+    /* Opcional: Transición para un efecto de "filtro" al pasar el mouse */
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Efecto Hover (al pasar el mouse) */
+.social-icons a:hover img {
+    opacity: 0.8; /* Hace la imagen ligeramente transparente al pasar el mouse */
+    transform: scale(1.1); /* Hace la imagen un poco más grande */
+}
 .btn-volver {
     background: #fff;
     color: var(--color-secundario);
