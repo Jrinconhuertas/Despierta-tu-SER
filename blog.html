@@ -2,62 +2,95 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
+    <title>Despierta tu SER — Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
 
-    <section>
-        <h1>Blog</h1>
-        <p>Explora nuestras últimas publicaciones.</p>
+<header>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="menu-burger" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-        <div class="blog-container">
-            <article class="blog-item">
-                <img src="https://via.placeholder.com/300x200" alt="Imagen Blog 1">
-                <h3>Título del Artículo 1</h3>
-                <p>Descripción corta del artículo.</p>
-                <a href="#">Leer más</a>
-            </article>
+<div class="menu-fullscreen" id="menuFull">
+    <button class="close-menu" id="closeMenu">×</button>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+</div>
+</header>
 
-            <article class="blog-item">
-                <img src="https://via.placeholder.com/300x200" alt="Imagen Blog 2">
-                <h3>Título del Artículo 2</h3>
-                <p>Descripción corta del artículo.</p>
-                <a href="#">Leer más</a>
-            </article>
+<section class="hero">
+    <h1>Blog & Sabiduría</h1>
+    <p>Reflexiones y herramientas para elevar tu vibración.</p>
+</section>
 
-            <article class="blog-item">
-                <img src="https://via.placeholder.com/300x200" alt="Imagen Blog 3">
-                <h3>Título del Artículo 3</h3>
-                <p>Descripción corta del artículo.</p>
-                <a href="#">Leer más</a>
-            </article>
-        </div>
-    </section>
+<section class="blog-container">
+    <article class="blog-item">
+        <img src="https://picsum.photos/300" alt="Artículo">
+        <h3>Conexión con tu propósito</h3>
+        <a href="#">Leer más</a>
+    </article>
+    <article class="blog-item">
+        <img src="https://picsum.photos/301" alt="Artículo">
+        <h3>Meditación para principiantes</h3>
+        <a href="#">Leer más</a>
+    </article>
+    <article class="blog-item">
+        <img src="https://picsum.photos/302" alt="Artículo">
+        <h3>Energía y bienestar</h3>
+        <a href="#">Leer más</a>
+    </article>
+</section>
 
-    <footer>
-        <div class="social-icons">
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="YouTube"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Quora"></a>
-        </div>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="servicios.html">Servicios</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <p>Desarrollado por [Nombre del desarrollador] &copy; 2024</p>
-    </footer>
+<footer>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <p>Despierta tu SER — Desarrollado por Informática JRM © 2025</p>
+</footer>
+
+</footer>
+<a href="https://wa.me/573000000000?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20contigo" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<script>
+    const burgerBtn = document.getElementById("burgerBtn");
+    const menuFull = document.getElementById("menuFull");
+    const closeBtn = document.getElementById("closeMenu");
+
+    burgerBtn.addEventListener("click", () => {
+        menuFull.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menuFull.classList.remove("active");
+    });
+
+    // Cerrar menú al hacer clic en cualquier enlace
+    document.querySelectorAll(".menu-fullscreen a")
+        .forEach(link => link.addEventListener("click", () => {
+            menuFull.classList.remove("active");
+        }));
+</script>
+
 </body>
 </html>

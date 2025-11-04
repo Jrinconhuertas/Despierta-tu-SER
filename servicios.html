@@ -2,53 +2,92 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios</title>
+    <title>Despierta tu SER — Servicios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Inicio</a>
-            <a href="servicios.html">Servicios</a>
-            <a href="blog.html">Blog</a>
-            <a href="contacto.html">Contacto</a>
-        </nav>
-    </header>
 
-    <section>
-        <h1>Nuestros Servicios</h1>
-        <p>Descripción breve de los servicios ofrecidos.</p>
-        <div class="servicios-container">
-            <div class="servicio-card">
-                <h3>Servicio 1</h3>
-                <p>Descripción del servicio ofrecido.</p>
-            </div>
-            <div class="servicio-card">
-                <h3>Servicio 2</h3>
-                <p>Descripción del servicio ofrecido.</p>
-            </div>
-            <div class="servicio-card">
-                <h3>Servicio 3</h3>
-                <p>Descripción del servicio ofrecido.</p>
-            </div>
-        </div>
-    </section>
+<header>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="menu-burger" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-    <footer>
-        <div class="social-icons">
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="YouTube"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Quora"></a>
-        </div>
-        <nav>
-            <a href="index.html">Inicio</a> |
-            <a href="servicios.html">Servicios</a> |
-            <a href="blog.html">Blog</a> |
-            <a href="contacto.html">Contacto</a>
-        </nav>
-        <p>Desarrollado por [Nombre del desarrollador] &copy; 2024</p>
-    </footer>
+<div class="menu-fullscreen" id="menuFull">
+    <button class="close-menu" id="closeMenu">×</button>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+</div>
+</header>
+
+<section class="hero">
+    <h1>Acompañamiento Profesional</h1>
+    <p>Sesiones para sanar, crecer y expandir tu consciencia.</p>
+</section>
+
+<section class="servicios-container">
+    <div class="servicio-card">
+        <h3>Coaching Personal</h3>
+        <p>Transforma tus creencias y despierta tu poder interior.</p>
+    </div>
+    <div class="servicio-card">
+        <h3>Meditaciones Guiadas</h3>
+        <p>Encuentra paz y claridad con prácticas personalizadas.</p>
+    </div>
+    <div class="servicio-card">
+        <h3>Sanación Energética</h3>
+        <p>Armoniza cuerpo, mente y espíritu desde la energía.</p>
+    </div>
+</section>
+
+<footer>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <p>Despierta tu SER — Desarrollado por Informática JRM © 2025</p>
+</footer>
+
+</footer>
+<a href="https://wa.me/573000000000?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20contigo" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<script>
+    const burgerBtn = document.getElementById("burgerBtn");
+    const menuFull = document.getElementById("menuFull");
+    const closeBtn = document.getElementById("closeMenu");
+
+    burgerBtn.addEventListener("click", () => {
+        menuFull.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menuFull.classList.remove("active");
+    });
+
+    // Cerrar menú al hacer clic en cualquier enlace
+    document.querySelectorAll(".menu-fullscreen a")
+        .forEach(link => link.addEventListener("click", () => {
+            menuFull.classList.remove("active");
+        }));
+</script>
+
 </body>
 </html>

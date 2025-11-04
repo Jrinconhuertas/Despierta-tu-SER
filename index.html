@@ -2,74 +2,109 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Onepage Website</title>
-    <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #333; color: #fff; padding: 20px; position: fixed; top: 0; width: 100%; z-index: 1000; }
-        header nav a { color: #fff; margin: 0 15px; text-decoration: none; font-weight: bold; }
-        section { padding: 80px 20px; text-align: center; }
-        .hero { background: url('https://via.placeholder.com/1200x400') center/cover no-repeat; color: #fff; }
-        .testimonios, .radio { background: #f4f4f4; }
-        footer { background: #222; color: #fff; text-align: center; padding: 40px 20px; }
-        footer a { color: #fff; text-decoration: none; margin: 0 10px; }
-        .social-icons img { width: 30px; margin: 0 5px; }
-        @media(max-width: 768px) {
-            header nav a { display: inline-block; margin: 10px; }
-        }
-    </style>
+    <title>Despierta tu SER — Inicio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#servicios">Servicios</a>
-            <a href="#blog">Blog</a>
-            <a href="#contacto">Contacto</a>
-        </nav>
-    </header>
 
-    <section id="inicio" class="hero">
-        <h1>Título Principal de la Página</h1>
-        <p>Descripción corta sobre el propósito del sitio web.</p>
-    </section>
+<header>
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+    <div class="menu-burger" id="burgerBtn">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-    <section id="servicios">
-        <h2>Nuestros Servicios</h2>
-        <p>Descripción breve de los servicios ofrecidos.</p>
-    </section>
+<div class="menu-fullscreen" id="menuFull">
+    <button class="close-menu" id="closeMenu">×</button>
+    <a href="index.html">Inicio</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="blog.html">Blog</a>
+    <a href="contacto.html">Contacto</a>
+</div>
+</header>
 
-    <section class="testimonios">
-        <h2>Testimonios</h2>
-        <p>"Excelente servicio, muy recomendado" - Cliente 1</p>
-        <p>"La mejor experiencia, volveré!" - Cliente 2</p>
-        <p>"Profesionales y dedicados" - Cliente 3</p>
-    </section>
+<section class="hero">
+    <h1>Despierta tu SER</h1>
+    <p>Conecta con tu interior. Transforma tu realidad. Vive con consciencia.</p>
+</section>
 
-    <section class="radio">
-        <h2>Programa de Radio Semanal</h2>
-        <p>Accede a nuestro contenido semanal</p>
-        <ul>
-            <li><a href="#">Episodio 1</a></li>
-            <li><a href="#">Episodio 2</a></li>
-            <li><a href="#">Episodio 3</a></li>
-        </ul>
-    </section>
+<section class="sobre-container">
+<img class="sobre-img" src="https://images.unsplash.com/photo-1524253482453-3fed8d2fe12b?auto=format&fit=crop&w=600&q=60" alt="Coach Holística">
+<div class="sobre-texto">
+<h2>Paulina Garcés León</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id lorem velit. Praesent vitae sapien eu risus viverra dapibus. Mauris nec lectus id orci finibus faucibus. Sed sed interdum leo, vel tempus lacus.</p>
+</div>
+</section>
 
-    <footer>
-        <div class="social-icons">
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Instagram"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="YouTube"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Quora"></a>
-        </div>
-        <nav>
-            <a href="#inicio">Inicio</a> |
-            <a href="#servicios">Servicios</a> |
-            <a href="#blog">Blog</a> |
-            <a href="#contacto">Contacto</a>
-        </nav>
-        <p>Desarrollado por [Nombre del desarrollador] &copy; 2024</p>
-    </footer>
+<section>
+    <h2>¿Quién soy? - Aca podemos dejar solo la parte superior o si quieres los dos</h2>
+    <p>Soy coach holístico especializado en bienestar emocional, crecimiento personal y conexión espiritual. Te acompaño a descubrir tu propósito y alcanzar tu máximo potencial.</p>
+</section>
+
+<section class="testimonios">
+<h2>Testimonios</h2>
+<p>"Gracias a esta experiencia, cambié mi forma de ver la vida." — Cliente 1</p>
+<p>"Me siento más tranquila y conectada conmigo misma." — Cliente 2</p>
+</section>
+
+<section class="radio">
+<h2>Programa de Radio</h2>
+<p><a href="#">Escucha mi programa semanal aquí</a></p>
+</section>
+
+<footer>
+    <div class="social-icons">
+        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+        <a href="#"><img src="youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+        <a href="#"><img src="quora.png" alt="Quora"></a>
+    </div>
+
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="servicios.html">Servicios</a>
+        <a href="blog.html">Blog</a>
+        <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <p>Despierta tu SER — Desarrollado por Informática JRM © 2025</p>
+</footer>
+
+</footer>
+<a href="https://wa.me/573000000000?text=Hola%2C%20me%20gustar%C3%ADa%20agendar%20una%20sesi%C3%B3n%20contigo" class="whatsapp-btn" target="_blank" aria-label="WhatsApp">
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+<script>
+    const burgerBtn = document.getElementById("burgerBtn");
+    const menuFull = document.getElementById("menuFull");
+    const closeBtn = document.getElementById("closeMenu");
+
+    burgerBtn.addEventListener("click", () => {
+        menuFull.classList.add("active");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        menuFull.classList.remove("active");
+    });
+
+    // Cerrar menú al hacer clic en cualquier enlace
+    document.querySelectorAll(".menu-fullscreen a")
+        .forEach(link => link.addEventListener("click", () => {
+            menuFull.classList.remove("active");
+        }));
+</script>
+
 </body>
 </html>
