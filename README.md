@@ -15,3 +15,6 @@ Es una pequeña muestra de amor, no solo por la programación, sino también por
 ... Javier Rincón (Informatica JRM)
 
 ...  Paulina Garcés (Despierta tu SER)
+
+
+La idea principal es que hagas cambios al texto que deje antes. 
