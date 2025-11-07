@@ -19,6 +19,6 @@ Es una pequeña muestra de amor, no solo por la programación, sino también por
 
 La idea principal es que hagas cambios al texto que deje antes. 
 
-<h2>Modificacion de titulos</h2>
+<h2>gracias por ser parte de esto</h2>
 
 <p>Solo se modifica este tipo de texto</p>
