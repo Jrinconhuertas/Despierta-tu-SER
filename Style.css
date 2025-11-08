@@ -1,9 +1,9 @@
 /* 🎨 Estilo Energía Espiritual: Turquesa + Morado + Degradados */
 
 :root {
-    --color-primario: #35d1c1; /* Turquesa */
-    --color-secundario: #c4559b; /* Morado espiritual */
-    --color-texto: #1a1a1a;
+    --color-primario: #4ebbba; /* Turquesa */
+    --color-secundario: #a472a4; /* Morado espiritual */
+    --color-texto: #000000;
     --color-claro: #ffffff;
     --color-gris-fondo: #f5f7fa;
 }
@@ -19,12 +19,12 @@ body {
 
 h1, h2, h3 {
     font-family: 'Lato Bold', serif;
-    color: var(--color-secundario);
+    color: var(--color-claro);
 }
 
 /* ===== HEADER ===== */
 header {
-    background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+    background: linear-gradient(3deg, var(--color-primario), var(--color-secundario));
     color: #fff;
     padding: 18px 15px;
     position: fixed;
@@ -237,6 +237,10 @@ header nav a:hover {
     line-height: 1.8;
 }
 
+.proposito h2 {
+    color : var(--color-secundario);
+}
+
 /* ===== TESTIMONIOS ===== */
 .testimonios {
     background: #ffffff;
@@ -352,7 +356,7 @@ header nav a:hover {
 
 /* ===== PROGRAMA DE RADIO ===== */
 .radio {
-    background: linear-gradient(90deg, var(--color-primario), var(--color-secundario));
+    background: linear-gradient(1deg, var(--color-primario), var(--color-secundario));
     color: #fff;
     text-align: center;
     padding: 80px 20px;
@@ -467,7 +471,7 @@ footer nav a:hover {
 
 /* Estilos básicos para el Footer */
 footer {
-    background-color: #333; /* Color de fondo oscuro */
+    background-color: #03787c; /* Color de fondo oscuro */
     color: white; /* Color de texto claro */
     padding: 20px 0;
     text-align: center; /* Centra el texto de copyright */
@@ -481,10 +485,11 @@ footer {
 }
 
 /* Estilos para las Imágenes de los Íconos */
-.social-icons img {
+.social-icons i {
     /* Define el tamaño de tus íconos */
-    width: 30px; 
-    height: 30px; 
+    width: 40px; 
+    height: 40px; 
+    color: white;
     
     /* Asegura que la imagen se vea bien (útil si las imágenes son de alta resolución) */
     object-fit: contain; 
@@ -497,10 +502,12 @@ footer {
 }
 
 /* Efecto Hover (al pasar el mouse) */
-.social-icons a:hover img {
+.social-icons a:hover i {
     opacity: 0.8; /* Hace la imagen ligeramente transparente al pasar el mouse */
     transform: scale(1.1); /* Hace la imagen un poco más grande */
+    color: var(--color-primario);
 }
+
 .btn-volver {
     background: #fff;
     color: var(--color-secundario);
