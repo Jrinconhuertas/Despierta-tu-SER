@@ -21,4 +21,4 @@ La idea principal es que hagas cambios al texto que deje antes.
 
 <h2>gracias por ser parte de esto</h2>
 
-<p>Solo se modifica este tipo de texto</p>
+<p>Hola, deje cargando info sobre mi pagina, mi bio y servcicios el viernes pasado, no se si este bien la edicion aca, hay algo mas que quiero poner, me avisas, gracias</p>
